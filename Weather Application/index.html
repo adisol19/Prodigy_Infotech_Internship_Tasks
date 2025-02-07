@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather Web Application</title>
+  </head>
+  <body>
+    <video autoplay muted loop id="background-video">
+      <source src="bg.mp4" type="video/mp4" />
+
+      Your browser does not support the video tag.
+    </video>
+
+    <div class="container">
+      <div class="navbar">
+        <span class="logo">BREEZE</span>
+      </div>
+
+      <div class="search-container">
+        <input
+          type="text"
+          id="city"
+          placeholder="Search your city"
+          class="search-box"
+        />
+        <button onclick="searchWeather()" class="search-btn">
+          <img src="icon.png" alt="search" class="search-icon" />
+        </button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

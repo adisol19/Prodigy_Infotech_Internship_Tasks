@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="weather.css" />
+    <title>Weather Details</title>
+  </head>
+  <body>
+    <video autoplay muted loop id="background-video">
+      <source src="bg2.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <div class="container">
+      <div class="weather-card" id="weather-card">
+        <h2 id="city-name">Loading...</h2>
+        <div class="weather-details">
+          <div class="temperature"><span id="temperature"></span>°C</div>
+          <div class="condition-video">
+            <video autoplay muted loop id="condition-video" class="hidden">
+              <source src="" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <p id="condition-text"></p>
+        </div>
+        <div class="additional-info">
+          <p><strong>Feels Like:</strong> <span id="feels-like"></span>°C</p>
+          <p><strong>Humidity:</strong> <span id="humidity"></span>%</p>
+          <p><strong>Pressure:</strong> <span id="pressure"></span> hPa</p>
+          <p><strong>Cloud Coverage:</strong> <span id="clouds"></span>%</p>
+          <p><strong>Wind Speed:</strong> <span id="wind-speed"></span> m/s</p>
+          <p>
+            <strong>Wind Direction:</strong> <span id="wind-direction"></span>°
+          </p>
+          <p>
+            <strong>Air Quality Index:</strong>
+            <span id="aqi">Fetching...</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="weather.js"></script>
+  </body>
+</html>
