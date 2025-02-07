@@ -1,0 +1,276 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  background-color: black;
+  border-bottom: 2px solid white;
+}
+
+.logo {
+  font-family: "Impact", sans-serif;
+  font-size: 32px;
+  letter-spacing: 10px;
+  font-weight: bold;
+  color: white;
+}
+
+.main-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: calc(60vh - 60px);
+  padding: 20px;
+}
+
+.box {
+  background-color: black;
+  border: 3px solid white;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.clock {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border: 3px solid white;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.center-circle {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: grey;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hand {
+  position: absolute;
+  background-color: white;
+  transform-origin: bottom;
+  border-radius: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hour-hand {
+  height: 60px;
+  width: 6px;
+  top: 40px;
+}
+
+.minute-hand {
+  height: 80px;
+  width: 4px;
+  top: 20px;
+}
+
+.second-hand {
+  height: 90px;
+  width: 2px;
+  background-color: red;
+  top: 10px;
+}
+
+.stopwatch-box {
+  flex: 1.5;
+  height: 250px;
+  margin: 0 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.stopwatch-timer {
+  font-size: 42px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+
+.btn {
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.btn-start {
+  background-color: green;
+}
+.btn-stop {
+  background-color: red;
+}
+.btn-lap,
+.btn-reset {
+  background-color: grey;
+}
+
+.date-time-box {
+  width: 300px;
+  height: 250px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.date-display {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.time-display {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.zone-buttons button {
+  display: block;
+  margin: 10px auto;
+  width: 80%;
+  background-color: black;
+  border: 2px solid white;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.zone-buttons button:hover {
+  background-color: white;
+  color: black;
+}
+
+.timer-inputs input {
+  width: 60px;
+  margin: 5px;
+  text-align: center;
+  padding: 5px;
+  border-radius: 10px;
+  border: none;
+}
+
+.timer-buttons button {
+  padding: 10px;
+  margin: 5px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn-start {
+  background-color: green;
+  color: black;
+}
+.btn-stop {
+  background-color: red;
+  color: black;
+}
+.btn-reset {
+  background-color: grey;
+  color: black;
+}
+
+.timer-display {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.lap-list {
+  max-height: 150px;
+  overflow-y: auto;
+  text-align: left;
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.new-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.left-new-box,
+.middle-new-box,
+.right-new-box {
+  width: 30%;
+}
+
+.zone-timer-box,
+.lap-time-box,
+.custom-timer-box {
+  padding: 20px;
+  background-color: black;
+  border-radius: 15px;
+  border: 3px solid white;
+}
+
+.heading {
+  font-weight: bold;
+  color: white;
+}
+
+.zone-buttons button,
+.timer-buttons button {
+  padding: 10px;
+  margin: 5px;
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.zone-buttons button:hover,
+.timer-buttons button:hover {
+  background-color: white;
+  color: black;
+}
+
+.lap-list {
+  max-height: 150px;
+  overflow-y: auto;
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.timer-inputs input {
+  width: 60px;
+  margin: 5px;
+  text-align: center;
+  padding: 5px;
+  border-radius: 10px;
+  border: none;
+}

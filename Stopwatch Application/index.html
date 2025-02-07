@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stopwatch Web Application</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">T I M Z E</div>
+    </nav>
+
+    <section class="main-section">
+      <div class="box analogue-box">
+        <div class="clock">
+          <div class="center-circle"></div>
+          <div class="hand hour-hand"></div>
+          <div class="hand minute-hand"></div>
+          <div class="hand second-hand"></div>
+        </div>
+      </div>
+
+      <div class="box stopwatch-box">
+        <div class="stopwatch-timer">00:00:00</div>
+        <div class="buttons">
+          <button id="startButton" class="btn btn-start">START</button>
+          <button id="stopButton" class="btn btn-stop">STOP</button>
+          <button id="lapButton" class="btn btn-lap">LAP</button>
+          <button id="resetButton" class="btn btn-reset">RESET</button>
+        </div>
+      </div>
+
+      <div class="box date-time-box">
+        <div class="date-display" id="date"></div>
+        <div class="time-display" id="time"></div>
+      </div>
+    </section>
+
+    <div class="new-section">
+      <div class="left-new-box">
+        <div class="box zone-timer-box">
+          <h2 class="heading">ZONE</h2>
+
+          <div class="zone-buttons">
+            <button class="zone-timer-button" data-time="3600">1 Hour</button>
+            <button class="zone-timer-button" data-time="1800">
+              30 Minutes
+            </button>
+            <button class="zone-timer-button" data-time="900">
+              15 Minutes
+            </button>
+          </div>
+
+          <div class="zone-timer-display">00:00:00</div>
+        </div>
+      </div>
+
+      <div class="middle-new-box">
+        <div class="box lap-time-box">
+          <h2 class="heading">LAP TIME</h2>
+          <div id="lapList" class="lap-list"></div>
+        </div>
+      </div>
+
+      <div class="right-new-box">
+        <div class="box custom-timer-box">
+          <h2 class="heading">TIMER</h2>
+          <div class="timer-display">00:00:00</div>
+          <div class="timer-inputs">
+            <input type="number" id="hours" placeholder="00" />
+            <input type="number" id="minutes" placeholder="00" />
+            <input type="number" id="seconds" placeholder="00" />
+          </div>
+          <div class="timer-buttons">
+            <button class="btn-start" onclick="startCustomTimer()">
+              START
+            </button>
+            <button class="btn-stop" onclick="stopCustomTimer()">STOP</button>
+            <button class="btn-reset" onclick="resetCustomTimer()">
+              DELETE
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
